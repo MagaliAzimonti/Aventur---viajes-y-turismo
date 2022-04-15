@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../stylesheet/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/map-4900172_1280.webp">
+    <a href="https://www.favicon-generator.org/"></a>
+    <!-- Font awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <div class="header__logo">
+                <img src="../images/map-4900172_1280.webp" alt="logo" >
+            </div>
+        </a>
+        <a href="../index.html">
+            <div class="header__title"> 
+                <h1>Aventur</h1>
+            </div>
+        </a>
+        <label for="menu" class="burguerMenu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu">
+        <nav class="header__nav">
+            <label for="menu" class="header__close--menu">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <ul class="header__nav--list">
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="payment.html">Medios de Pago</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contact__main--container" id="top2">
+        <form action="/ruta-destino" class="contact__main--form">
+            <h2>Contacto</h2>
+            <legend class="contact__legend">¡Realizá tu consulta y te responderemos a la brevedad!</legend>
+            <label for="nombre" class="contact__label--name">Nombre(*)</label>
+            <input type="text" name="userName" placeholder="Ej: Juan Perez" required>
+            <label for="tel" class="contact__label--tel">Teléfono</label>
+            <input type="number" name="phone" placeholder="Ej: 1165897653">
+            <label for="email" class="contact__label--email">Email(*)</label>
+            <input type="email" name="email" placeholder="Ej: juanperez@aventur.com" required>
+            <textarea name="message" placeholder="Dejá tu mensaje" cols="30" rows="10" class="contact__textarea"></textarea>
+            <div class="contact__form--button">
+                <button type="submit" class="button__submit">Enviar</button>
+                <button type="reset" class="button__reset">Limpiar</button>
+            </div>
+        </form>
+        <section class="contact__main--info">
+            <h3>Atención al Público</h3>
+            <p>Calle falsa 123, Longchamos, Buenos Aires, Argentina</p>
+            <p class="contact__info--p">Teléfono: 4242-4242</p>
+            <p>Email: consultas@aventur.com</p>
+        </section>
+    </main>
+    <div class="home__top--button">
+        <a href="#top2"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+    <footer>
+        <div>
+            <section class="social__media">
+                <ul class="social__media--list">
+                    <li class="social__media--instagram"><a href="https://www.instagram.com/" target="_blank"><img src="../images/insta.png" alt="instagram"></a></li>
+                    <li class="social__media--facebook"><a href="https://www.facebook.com" target="_blank"><img src="../images/facebook.png" alt="facebook"></a></li>
+                    <li class="social__media--twitter"><a href="https://www.twitter.com" target="_blank"><img src="../images/twitter.png" alt="twitter"></a></li>
+                    <li class="social__media--whatsapp"><a href="https://api.whatsapp.com/send?phone=1158897653" target="_blank"><img src="../images/whatsapp.png" alt="whatsapp"></a></li>
+                </ul>
+            </section>
+            <section class="location">
+                <h4>
+                    <a href="location.html">¿Dónde está ubicada nuestra sede?</a>
+                </h4>
+                <p>Calle Falsa 123, Longchamps, Buenos Aires, Argentina</p>
+            </section>
+            <section class="copyright">
+                <h6>Copyright © 2022 Aventur. Todos los derechos reservados.</h6>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
